@@ -1,8 +1,14 @@
-function Score() {
+function Score({ score, bestScore }) {
   return (
     <div className='score'>
-      <p> Score: 0</p>
-      <p>High Score:</p>
+      <div>
+        <h1>Chowder Memory Card Game</h1>
+        <p>Don't click on an image twice!</p>
+      </div>
+      <div>
+        <p> Score: {score}</p>
+        <p>High Score: {bestScore}</p>
+      </div>
     </div>
   );
 }
