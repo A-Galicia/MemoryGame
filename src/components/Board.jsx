@@ -5,6 +5,14 @@ function Board({ reset, endCurrentStage, incrementScore }) {
   const cardProps = [
     { image: 'Chowder.jpeg', name: 'Chowder' },
     { image: 'MungDaal.jpeg', name: 'Mung Daal' },
+    { image: 'Chestnut.jpeg', name: 'Chestnut' },
+    { image: 'Cinnamini.jpeg', name: 'Cinnamini' },
+    { image: 'Endive.jpeg', name: 'Endive' },
+    { image: 'Gargonzola.jpeg', name: 'Gargonzola' },
+    { image: 'Gazpacho.jpeg', name: 'Gazpacho' },
+    { image: 'Panini.png', name: 'Panini' },
+    { image: 'Shnitzel.jpeg', name: 'Shnitzel' },
+    { image: 'Truffles.png', name: 'Truffles' },
   ];
 
   const [positions, setPositions] = useState(
@@ -41,7 +49,7 @@ function Board({ reset, endCurrentStage, incrementScore }) {
             key={cardProps[position].name}
             image={cardProps[position].image}
             name={cardProps[position].name}
-            reset={cardProps.reset}
+            reset={reset}
             endCurrentStage={endCurrentStage}
             incrementScore={incrementScore}
             randomizeCards={shuffleCardPositions}

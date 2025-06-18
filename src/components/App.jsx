@@ -21,7 +21,7 @@ export function App() {
   };
 
   return (
-    <div>
+    <div className='game'>
       <Score score={score} bestScore={bestScore} />
       <div className='board'>
         <Board
